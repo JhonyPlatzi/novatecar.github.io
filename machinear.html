@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="machineStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<h1>AR EXPERIENCE</h1>
+
+<!-- Use it like any other HTML element -->
+<div class="base">
+    <h2>Sistemas Solares de Dosificación Solager</h2>
+    <model-viewer class="box" src="maquinaAR.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls  shadow-intensity="1">
+
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+        <div id="ar-prompt">
+            <img src="flecha-8.png">
+        </div>
+
+    </model-viewer>
+    
+
+</div>
+
+
+
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+</html>
